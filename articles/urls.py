@@ -1,7 +1,9 @@
 from django.urls import path
 from django.conf.urls import url
 from . import views
+
+
 urlpatterns = [
-    path('',views.article_lists),
-    url(r'^(?P<slug>[\w-]+)$',views.article_details),
+    url(r'^$',views.article_lists,name='list'),
+    url(r'^(?P<slug>[\w-]+)/$',views.article_details,name='detail'),
 ]

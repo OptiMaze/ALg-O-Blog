@@ -1,8 +1,8 @@
 body{
 	background-color : #ADFF2F;
 	color : #fff;
-	/*font-family: Ubuntu;*/
-	background-image: url(/static/stars.jpg)
+	font-family: Ubuntu;
+	background-image: url(/static/198875.jpg)
 
 }
 
@@ -15,4 +15,12 @@ h1,h2,h3,h4,h5{
 a:hover,a:visited {
 	color : #ADFF2F;
 	text-decoration: none;
+}
+a.hey:hover,a.hey:visited {
+	
+	color : #ffcc66;
+	text-decoration: none;
+}
+h3.hi {
+	color: #ffcc66;
 }

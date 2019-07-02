@@ -1,9 +1,10 @@
 
 	{%extends 'base_layout.html'%}
 	{%block content%}
-	<h1>Article Page</h1>
+	<h1>Algorithm Articles</h1>
+	
 	{% for a in arti %}
-	<h3><a href="">{{a.title}}</a></h3>
+	<h2><a href="{% url 'detail' slug=a.slug %}">{{a.title}}</a></h2>
 	<p>{{a.date}}</p>
 	<p>{{a.partial}}</p>
 	{% endfor %}
