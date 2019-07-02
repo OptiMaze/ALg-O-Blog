@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Articles</title>
-</head>
-<body>
-	<h1>Its articles page!</h1>
-</body>
-</html>
+
+	{%extends 'base_layout.html'%}
+	{%block content%}
+	<h1>Article Page</h1>
+	{% for a in arti %}
+	<h3><a href="">{{a.title}}</a></h3>
+	<p>{{a.date}}</p>
+	<p>{{a.partial}}</p>
+	{% endfor %}
+	{%endblock%}

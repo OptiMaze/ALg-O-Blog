@@ -1,0 +1,18 @@
+body{
+	background-color : #ADFF2F;
+	color : #fff;
+	/*font-family: Ubuntu;*/
+	background-image: url(/static/stars.jpg)
+
+}
+
+
+h1,h2,h3,h4,h5{
+	font-weight: normal;
+	margin : 10;
+}
+
+a:hover,a:visited {
+	color : #ADFF2F;
+	text-decoration: none;
+}
