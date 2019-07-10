@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'articles',
     'practice',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -121,9 +122,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR,'assets'),
-#     )
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'assets'),
+)
 
 MEDIA_URL = '/media/'
 
