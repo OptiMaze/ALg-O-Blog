@@ -5,7 +5,17 @@
 	<link rel="stylesheet" href="/static/static1.css">
 </head>
 <body>
-	<a class = "hey" href="{% url 'list' %}"><h3 class="hi">Go To Article List</h3></a>
+	<a class = "hey" href="{% url 'articles:list' %}"><h3 class="hi">Go To Article List</h3></a>
+	<nav>
+		<ul>
+			<li>
+				<form class = "logout-link" action = "{% url 'accounts:logout' %}" method = "post">
+					{%csrf_token%}
+					<button type = "submit"> Logout</button>
+				</form>
+			</li>
+		</ul>
+	</nav>
 	{%block content%}
 	{%endblock%}
 </body>

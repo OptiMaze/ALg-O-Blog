@@ -4,7 +4,7 @@
 	<h1>Algorithm Articles</h1>
 	
 	{% for a in arti %}
-	<h2><a href="{% url 'detail' slug=a.slug %}">{{a.title}}</a></h2>
+	<h2><a href="{% url 'articles:detail' slug=a.slug %}">{{a.title}}</a></h2>
 	<p>{{a.date}}</p>
 	<p>{{a.partial}}</p>
 	{% endfor %}
