@@ -1,0 +1,194 @@
+body{
+	/*#background-color: #fff;*/
+	background-image: url(/static/white-paper.jpg)
+}
+
+
+h1,h2,h3,h4,h5{
+	font-weight: normal;
+	margin : 10;
+}
+
+a:hover,a:visited {
+	color : #000000;
+	text-decoration: none;
+}
+
+a.hey:hover,a.hey:visited {
+	
+	color : #ffcc66;
+	text-decoration: none;
+}
+
+.article .author{
+	padding : 10px;
+	background: #000000;
+	position: absolute;
+	right : 0;
+	bottom:0;
+	margin: 0;
+	color:white;
+}
+
+.lg{
+	font-family: Impact, fantasy;
+	/*color: #000000;*/
+	margin-right: 15px;
+	font-size: 18px;
+
+}
+
+.sg{
+	font-family: Impact, fantasy;
+	/*color: #000000;*/
+	/*margin: 10px;*/
+	font-size: 18px;
+}
+
+h2.hi {
+	color: #eb9234;
+	font-family: Impact, fantasy;
+	margin-top: 32px;
+}
+
+.wrapper{
+	max-width: 960px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+div.wrapper h1{
+	text-align: center; 
+	margin: 80px auto ;
+	font-size: 2.4 em;
+	font-family: Impact, fantasy;
+	color: #eb9234;
+}
+div.wrapper h2{
+	font-family: Impact, fantasy;
+}
+
+.header{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 20px 0; 
+}
+
+h3.logout{
+	font-family: Impact, fantasy;
+}
+
+a.highlight{
+	font-family: Impact, fantasy;
+	/*color: #000000;*/
+	/*border : 1px solid #000000;*/
+	/*margin-right : 50px;*/
+	/*margin : 30px;*/
+	/*border-radius: 4px;*/
+	color: #000000;
+}
+
+nav{
+	justify-self: end;
+}
+
+nav li{
+	display: inline-block;
+	margin left : 20px
+}
+
+nav button{
+	background: none;
+	color: #000000;
+	cursor: pointer;
+	border : 0;
+	font-size : 1em;
+	font-size: 18px;
+}
+
+
+.articles{
+	display : grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+.article{
+	padding : 10px;
+	border : 1px solid #000000;
+	position: relative;
+	padding-bottom: 40px;
+	font-family: OCR A Std, monospace;
+}
+.article h2{
+	font-size: 1.2 em;
+}
+
+.ad {
+	padding: 0;
+}
+.ad h2{
+	text-align: center;
+	margin : 20px auto;
+	font-size: 2em;
+	text-decoration: underline;
+	/*font-family: Arial, sans-serif;*/
+	font-family: Impact, fantasy;
+
+}
+.ad h3{
+	text-align: center;
+	font-size: 30px;
+	font-family: Andale Mono, monospace;
+}
+
+.site-form{
+	margin-top: 60px;
+	border: 1px solid #000000;
+	padding:20px;
+	font-family: Gill Sans, sans-serif;
+	font-size:1.1em;
+}
+
+.sf{
+	font-family: Gill Sans, sans-serif;
+	text-align: center;
+}
+
+.site-form input, .site-form textarea{
+	display:block;
+	margin :20px 0 0 0;
+	padding : 10px;
+	font-size:1.1em;
+	font-family: Gill Sans, sans-serif;
+}
+.helptext, .helptext ul{
+	margin: 0 auto 20px;
+	color: grey;
+	font-size:1em;
+	display:block;
+	font-family: Gill Sans, sans-serif;
+}
+/*
+.heading{
+	color:#000000;
+}*/
+
+.errorlist li{
+	padding:10px;
+	list style type: none;
+	border:1px solid #ff5722;
+	color: #ff5722;
+	margin:10px 0;
+}
+.errorlist{
+	padding : 0;
+}
+
+.site-form input[type="submit"]{
+	background: black;
+	border: 0;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 4px;
+	margin: 10px 0;
+}

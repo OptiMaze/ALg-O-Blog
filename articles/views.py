@@ -16,10 +16,15 @@ def article_details(request,slug) :
 @login_required(login_url= "/accounts/login")
 def create(request):
 	if request.method == 'POST' :
-		form = forms.CreateArticles(request.POST,request.FILES)
+		form = forms.CreateArticles(request.POST)
 		if form.is_valid():
-			# save article to db
+			instance = form.save(commit  = False)
+			instance.author = request.user
+			instance.save()
 			return redirect('articles:list')
+		else :
+			form  = forms.CreateArticles()
+			return render(request,'articles/create.html',{'form' : form})
 	else :
 		form  = forms.CreateArticles()
-	return render(request,'articles/create.html',{'form' : form})
+		return render(request,'articles/create.html',{'form' : form})
