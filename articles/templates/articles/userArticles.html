@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+{% for a in arti %}
+	<div>
+	
+	<h2 ><a href="{% url 'articles:detail' slug=a.slug %}">{{a.title}}</a></h2>
+	<p>{{a.partial}}</p>
+	<p>{{a.date}}</p>
+	<form action = "{% url 'articles:del' slug=a.slug %}" method = "post">
+		{% csrf_token %}
+    <input type="submit" value="Delete">
+	</form>
+	</div>
+{% endfor %}
+{% endblock %}

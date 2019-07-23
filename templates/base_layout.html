@@ -16,7 +16,9 @@
 					<button type = "submit"> <h3 class = "logout">Log Out</h3></button>
 				</form>
 			</li>
-			<li><a href="{% url 'articles:create' %}" class = "highlight"><h3>Create Article</h3></a></li>
+			<li><a href="{% url 'articles:create' %}" class = "highlight"><h3>Create Article</h3></a>
+			</li>
+			
 			{% else %}
 			<li class = "lg"><a href="{% url 'accounts:login' %}"><h3>LogIn</h3></a></li>
 			<li class = "sg"><a href="{% url 'accounts:signup' %}"><h3>Sighup</h3></a></li>
