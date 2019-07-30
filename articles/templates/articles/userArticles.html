@@ -8,7 +8,7 @@
 	<h2 class="heading"><a href="{% url 'articles:detail' slug=a.slug %}">{{a.title}}</a></h2>
 	<p>{{a.partial}}</p>
 	<p>{{a.date}}</p>
-	<p class = "author"></p> 
+	<p class = "author"><a class = "author" href="{% url 'articles:delete' slug=a.slug %}">Delete</a></p> 
 	</div>
 	{% endfor %}
 	</div>

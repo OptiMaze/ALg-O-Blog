@@ -38,9 +38,9 @@ def userArticles(request):
 	# article = Articles.objects.all().order_by('date')
 	return render(request,'articles/userArticles.html',{'arti':articles})
 
-# def delete(request,slug):
-# 	article = Articles.objects.get(slug=slug)
-# 	article.delete()
-# 	return redirect('articles:userArticles')
+def delete(request,slug):
+	article = Articles.objects.get(slug=slug)
+	article.delete()
+	return redirect('articles:userArticles')
 
 
