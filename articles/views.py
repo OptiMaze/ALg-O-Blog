@@ -29,11 +29,14 @@ def create(request):
 		form  = forms.CreateArticles()
 		return render(request,'articles/create.html',{'form' : form})
 
-# def userArticles(request):
-# 	userName = request.user.get_username()
-# 	articles = Articles.objects.filter(author__username = userName)
-# 	# article = Articles.objects.all().order_by('date')
-# 	return render(request,'articles/userArticles.html',{'arti':articles})
+
+
+# @login_required(login_url= "/accounts/login")
+def userArticles(request):
+	userName = request.user.get_username()
+	articles = Articles.objects.filter(author__username = userName)
+	# article = Articles.objects.all().order_by('date')
+	return render(request,'articles/userArticles.html',{'arti':articles})
 
 # def delete(request,slug):
 # 	article = Articles.objects.get(slug=slug)
